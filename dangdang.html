@@ -7,7 +7,8 @@
 <body>
    <script>
       if(window.androidObject){
-      window.androidObject.getToken();
+      var s=window.androidObject.getToken();
+      document.write('token is:'+s)
     }else{
       document.write('no androidObject is here');
     }
